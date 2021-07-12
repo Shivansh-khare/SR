@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Library_Activity">
+
+    <TextView
+        android:id="@+id/tv_faq_disc2"
+        android:layout_width="299dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/read_frequentyly_asked_questions_and_there_answers_by_library_staff_ask_your_queries_doubts_and_share_suggestions"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_faq2" />
+
+    <TextView
+        android:id="@+id/tv_curr_disc"
+        android:layout_width="295dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/check_your_current_issued_books_there_submition_date_and_shows_your_total_fine_till_date"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_curr_stat" />
+
+    <TextView
+        android:id="@+id/tv_br"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_baseline_forward_24"
+        android:focusable="true"
+        android:text="@string/request_a_book"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_search_disc" />
+
+    <TextView
+        android:id="@+id/tv_faq2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_baseline_forward_24"
+        android:focusable="true"
+        android:text="@string/faq_s"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_br_disc" />
+
+    <TextView
+        android:id="@+id/tv_search_disc"
+        android:layout_width="294dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/search_for_current_books_in_library_for_every_field_of_interests_you_will_find_books"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_search" />
+
+    <TextView
+        android:id="@+id/tv_br_disc"
+        android:layout_width="297dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/you_can_request_a_book_if_it_is_not_available_in_library_and_it_will_be_purchased_if_remand_increases"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_br" />
+
+    <TextView
+        android:id="@+id/tv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_baseline_forward_24"
+        android:focusable="true"
+        android:text="@string/search_book"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_curr_disc" />
+
+    <TextView
+        android:id="@+id/tv_curr_stat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_baseline_forward_24"
+        android:focusable="true"
+        android:text="@string/current_status"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/library"
+        android:textColor="#673AB7"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
