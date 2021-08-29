@@ -4,7 +4,7 @@
     <string name="sr">SR</string>
     <string name="log_in">LOG IN</string>
     <string name="enter_your_password">Enter your Password</string>
-    <string name="enter_your_username">Enter your Username</string>
+    <string name="enter_your_username">Enter your Email</string>
     <string name="enter_your_name">Enter your Name</string>
     <string name="enter_your_roll_number">Enter your Roll number</string>
     <string name="enter_your_email">Enter your Email</string>
@@ -89,4 +89,8 @@
     <string name="akash_raghuvanshi">akash raghuvanshi</string>
     <string name="dushyant_shrivastav">dushyant shrivastav</string>
     <string name="title_activity_bus_activity">Map</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps2">Map</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

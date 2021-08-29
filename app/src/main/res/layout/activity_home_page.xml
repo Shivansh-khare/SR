@@ -1,131 +1,169 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d3d3d3"
     tools:context=".HomePage">
+    <ProgressBar
+        android:id="@+id/pb_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <ImageButton
-        android:id="@+id/imageButton_Acc"
-        android:layout_width="138dp"
-        android:layout_height="156dp"
-        android:layout_marginTop="88dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:contentDescription="@string/todo"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/img_506121" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50sp">
 
-    <ImageButton
-        android:id="@+id/imageButton_Lib"
-        android:layout_width="138dp"
-        android:layout_height="156dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="72dp"
-        android:contentDescription="@string/todo"
-        android:scaleType="fitCenter"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@drawable/pngwingcom" />
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/butonLib"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    app:cardCornerRadius="20sp"
+                    app:cardElevation="10sp"
+                    android:layout_margin="15sp"
+                    app:cardUseCompatPadding="false"
+                    android:clickable="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/butonAccount">
 
-    <ImageButton
-        android:id="@+id/imageButton_trans"
-        android:layout_width="138dp"
-        android:layout_height="156dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginLeft="26dp"
-        android:layout_marginBottom="134dp"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/a5dddcd57650ff323b969a3cdf16e9ff"
-        android:contentDescription="@string/todo" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="20sp">
 
-    <ImageButton
-        android:id="@+id/imageButton_Direct"
-        style="@style/Widget.AppCompat.ImageButton"
-        android:layout_width="138dp"
-        android:layout_height="156dp"
-        android:layout_marginEnd="34dp"
-        android:layout_marginRight="34dp"
-        android:layout_marginBottom="134dp"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/search_contacts"
-        tools:srcCompat="@drawable/search_contacts"
-        android:contentDescription="@string/todo" />
+                        <ImageView
+                            android:layout_width="90sp"
+                            android:layout_height="90sp"
+                            android:src="@drawable/library" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="168dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="44dp"
-        android:text="@string/welcome_shivansh"
-        android:textColor="#2196F3"
-        android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="parent" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/library"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="69dp"
-        android:layout_height="73dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="16dp"
-        android:contentDescription="@string/todo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/srimt1" />
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/butonAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/butonLib"
+                    app:cardCornerRadius="20sp"
+                    android:layout_margin="15sp"
+                    android:clickable="true"
+                    app:cardElevation="10sp"
+                    app:cardUseCompatPadding="false"
+                    app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="71dp"
-        android:layout_marginLeft="71dp"
-        android:text="@string/library"
-        android:textColor="#000000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton_Lib" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="20sp"
+                        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="71dp"
-        android:layout_marginRight="71dp"
-        android:text="@string/accounts"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton_Acc" />
+                        <ImageView
+                            android:layout_width="90sp"
+                            android:layout_height="90sp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/account"
+                            tools:layout_editor_absoluteX="224dp"
+                            tools:layout_editor_absoluteY="45dp" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="71dp"
-        android:layout_marginLeft="71dp"
-        android:text="@string/transport"
-        android:textColor="#000000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton_trans" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/accounts" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="71dp"
-        android:layout_marginRight="71dp"
-        android:text="@string/directory"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton_Direct" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/butonTrans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="20sp"
+                    app:cardElevation="10sp"
+                    android:layout_margin="15sp"
+                    app:cardUseCompatPadding="false"
+                    android:clickable="true"
+                    app:layout_constraintEnd_toStartOf="@id/butonDirec"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="20sp">
+                        <ImageView
+                            android:layout_width="90sp"
+                            android:layout_height="90sp"
+                            android:src="@drawable/bus"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/transport"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/butonDirec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="20sp"
+                    app:cardElevation="10sp"
+                    app:cardUseCompatPadding="false"
+                    android:layout_margin="15sp"
+                    android:clickable="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/butonTrans"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="20sp">
+                        <ImageView
+                            android:layout_width="90sp"
+                            android:layout_height="90sp"
+                            android:src="@drawable/directory"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/directory"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
