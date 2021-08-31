@@ -15,5 +15,8 @@ This app was made with the intension of solving some real word problems which I 
   ### screen shot
   <img src="https://user-images.githubusercontent.com/71515610/131459562-7701d261-eefc-4289-96d7-6827990b519b.jpg">
 
-install Apk
+## install Apk
 [SR App](https://www.shivanshkhare.engineer/wp-content/uploads/2021/08/SR.zip)
+
+## website
+[Shivansh project](https://www.shivanshkhare.engineer/?page_id=17)
