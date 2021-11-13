@@ -10,6 +10,7 @@ This app was made with the intension of solving some real word problems which I 
 ## Demo
 
   ### vedio
+  watch this vedio to fully understand what this application is all about. \\
    [vedio link](https://youtu.be/4SMmKRRRda4)
 
   ### screen shot
